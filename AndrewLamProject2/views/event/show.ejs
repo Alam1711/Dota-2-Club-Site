@@ -1,0 +1,75 @@
+<%- include('../partials/header.ejs')%>
+<div class="content">
+  <table class="eventsTable">
+    <thead class="eTableTitle">
+      <tr>
+        <h4><%= event.title%></h4>
+        <small>Posted <%=event.createdAt%> by <%= event.author%></small>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <h3>Event Description:</h3>
+        </td>
+        <td>
+          <div id="event"><%= event.content%></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Required Rank:</h3>
+        </td>
+        <td><%= event.requiredRank%></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Location:</h3>
+        </td>
+        <td><%= event.location%></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Food Provided:</h3>
+        </td>
+        <td><%= event.food%></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Event Type:</h3>
+        </td>
+        <td><%= event.category%></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Picture Type:</h3>
+        </td>
+        <td>
+          <img
+            class="eventImage"
+            alt="NO picture provided"
+            src="<%= event.picture%>"
+            style="width: 100%"
+          />/td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <form class="butt">
+    <button
+      type="submit"
+      formmethod="GET"
+      formaction="/events/<%= event.id%>/edit"
+    >
+      Edit
+    </button>
+    <button
+      type="submit"
+      formmethod="POST"
+      formaction="/events/<%= event.id%>?_method=DELETE"
+    >
+      Delete
+    </button>
+  </form>
+</div>
+<%- include('../partials/footer.ejs')%>

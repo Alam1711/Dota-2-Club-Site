@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html
+>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Home</title>
+
+</head>
+<body>
+    <h2>Students</h2>
+
+    <% if(student) {%>
+
+        <ul>
+            <li><%= student.name%></li>
+        </ul>
+
+    <% } else { %>
+        <p>There is no student to display</p>
+        <% } %>
+</body>
+</html>

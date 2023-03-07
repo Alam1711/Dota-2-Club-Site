@@ -1,0 +1,29 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/storyController')
+
+//GET /stories
+
+router.get('/', controller.index);
+
+
+//Get /stories/new" send html form for creating new stories
+
+router.get('/new', controller.new);
+
+//Post /stories: create a new story
+
+router.post('/', controller.create);
+
+router.get('/:id', controller.show);
+
+
+router.get('/:id/edit', controller.edit);
+
+router.put('/:id', controller.update);
+
+router.delete('/:id', controller.delete);
+
+
+
+module.exports = router;

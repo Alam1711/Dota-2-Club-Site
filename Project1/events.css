@@ -1,0 +1,91 @@
+img {
+  display: block;
+}
+main {
+  font-size: 16px;
+  text-align: center;
+}
+body {
+  font-size: 16px;
+  font-style: serif;
+  text-align: center;
+  background-color: mediumseagreen;
+}
+.titles {
+  background-color: green;
+  border: 5px solid black;
+  color: black;
+}
+
+footer {
+  background-color: green;
+}
+img :hover {
+  opacity: 0.5;
+}
+.textunderpic {
+  border: 5px solid black;
+  background-color: Gray;
+  font-style: serif;
+  border: 5px solid black;
+  font-size: 20px;
+}
+.navbar-toggler {
+  overflow: hidden;
+  border: 5px solid black;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+footer {
+  border: 5px solid black;
+}
+/* Menu Bar*/
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #0ece0e;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: medium;
+  background-color: #0ece0e;
+}
+.listedBelow {
+  font-weight: bold;
+  font-size: xx-large;
+  background-color: #0ece0e;
+  text-decoration: underline;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.eventTitle {
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.tournament,
+.cm {
+  font-size: x-large;
+}
+.dpc {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  float: right;
+}

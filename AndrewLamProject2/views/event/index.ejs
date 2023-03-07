@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs')%>
+<div class="content">
+  <table class="eventsTable">
+    <thead class="eTableTitle">
+      <tr>
+        <th>Click on a Event to learn about it!</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%if(events.length) {%> <%events.forEach(event=>{%>
+      <tr>
+        <td>
+          <a href="/events/<%= event.id%>" class="eventLink"
+            ><p><%= event.title%></p></a
+          >
+          <small>- <%= event.category%></small>
+        </td>
+      </tr>
+      <%}); } else {%>
+      <td>There are no events to display.</td>
+
+      <%}%>
+    </tbody>
+  </table>
+</div>
+<%- include('../partials/footer.ejs')%>

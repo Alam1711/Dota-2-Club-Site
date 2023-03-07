@@ -1,0 +1,57 @@
+img {
+  display: block;
+}
+main {
+  font-size: 16px;
+  text-align: center;
+}
+body {
+  font-size: 16px;
+  font-style: serif;
+  text-align: center;
+  background-color: mediumseagreen;
+}
+.titles {
+  background-color: green;
+  border: 5px solid black;
+  color: black;
+}
+
+footer {
+  background-color: green;
+}
+img :hover {
+  opacity: 0.5;
+}
+.eventForm {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+  align-content: center;
+  align-self: center;
+  display: inline-block;
+  width: 1000px;
+  text-align: center;
+}
+.navbar-toggler {
+  overflow: hidden;
+  border: 5px solid black;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+footer {
+  border: 5px solid black;
+  padding: 2px;
+  margin: 20px;
+}
+/* Menu Bar*/
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #0ece0e;
+}
+.form-group {
+  padding: "10px";
+}
